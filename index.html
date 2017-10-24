@@ -2,16 +2,17 @@
 <html lang="pl">
 
 <head>
+<title>trust ME - Patryk Barchwic</title>
 <meta charset="utf-8"/>
-<title>Patryk Barchwic - Portfolio</title>
-<meta name= "description" content= "moja strona"/>
-<meta name="keywords" content=" cwiczenia, nauka"/>
-
+<meta name= "description" content= "Patryk Barchwic - junior front-end developer trust me"/>
+<meta name= "autor" content= "Patryk Barchwic"/>
+<meta name="keywords" content=" trust me, Frontend, WebDeweloper, HTML, CSS, JavaScript, jQuery, Junior, prasza, portfolio "/>
 
 <link rel="stylesheet" href="style.css" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
 <script src="http://code.jquery.com/jquery-latest.js"></script>
 <script src="https://cdn.jsdelivr.net/jquery.color-animation/1/mainfile"></script>
 </head>
@@ -30,7 +31,7 @@
 			</div>
 	</header>
 	<nav>
-		<div class="menu" id="first">About</div>
+		<div class="menu" id="first">O mnie</div>
 		<div class="menu" id="second"> Umiejętności<i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
 		<div class="menu" id="third"> Projekty<i class="fa fa-cogs" aria-hidden="true"></i></div>
 		<div class="menu" id="fourth"> Kontakt <i class="fa fa-lightbulb-o" aria-hidden="true"></i></div>
@@ -38,7 +39,7 @@
 	<article class="slide" id="about">
 		<div class="ex"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
 		<h1> O mnie </h1>
-				<span>Inżynier z krwi i kości :)</span>
+				<div>Inżynier z krwi i kości :)</div>
 	</article>
 	<article class="slide" id="skills">
 		<div class="ex"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
@@ -80,34 +81,73 @@
 	<article class="slide" id="project">
 		<div class="ex"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
 			<h1> Projekty </h1>
-			<span> Jest ich niewiele ale z czasem bedzie coraz więcej...</span>
+			<div class="projectText">Jest ich niewiele ale z czasem bedzie coraz więcej...</div>
 			<section>
-				<div class="box">
-					<a target="_blank" href="http://rysujebolubie.pl/">
-						<img src="image/rbl.png" alt=" strona rysujebolubie.pl">
-							<p>Strona o rysowaniu</p>
-					</a>
+				<div class="projectBox">
+					<div class="box">
+						<a target="_blank" href="http://rysujebolubie.pl/">
+							<img src="image/rbl.png" alt=" strona rysujebolubie.pl">	
+						</a>
+					</div>
+					<div class="projectText">
+						<h3> rysujebolubie.pl</h3>
+						<span>Strona poświęcona pasji i hobby jakim jest rysowanie. Logo wykonane w programie Adobe Photoshop. Użyte technologie: HTML, CSS, jQuery wykorzystane do stworzenia menu mobilnego. Całość jest w pełni responsywne.</span>
+					</div>
 				</div>
+				<div class="projectBox">
 				<div class="box">
 					<a target="_blank" href="https://github.com/pbarchwic/SharpClock">
 						<img src="image/s_clock.png" alt=" klasyczny zegarek sharp napisany przy pomocy css i JavaScript ">
-							<p>Fajny Retro zegar</p>
 					</a>
 				</div>
-				<div class="box"><a target="_blank" href="https://github.com/pbarchwic/SharpClock"><img src="image/js_game.png" alt=" prosta gra napisana w css i JavaScript"><p>Gra liczbowa dla dwoch graczy - całość wykonana w CSS oraz przy użyciu JavaScript.</p></a></div>
-				<div class="box"></div>
-				<div class="box"></div>
-				<div class="box"></div>
+					<div class="projectText">
+						<h3> Retro zegarek SHARP</h3>
+						Wygląd zegara inspirowany budzikiem firmy SHARP z lat 80-tych, częst rekwizyt amerykanskich filmów tamtego okresu. Użyte technologie: HTML, CSS, czysty JavaScript.
+					</div>
+				</div>
+				<div class="projectBox">
+					<div class="box">
+						<a target="_blank" href="https://github.com/pbarchwic/graKod">
+							<img src="image/js_game.png" alt=" prosta gra napisana w css i JavaScript">
+						</a>
+					</div>
+					<div class="projectText">
+						<h3> Odgadnij tajny kod</h3>
+						Prost gra liczbowa typu "odgadnij liczbę", dla dwóch graczy. Użyte technologie: HTML, CSS, czysty JavaScript.
+					</div>
+				</div>	
+				<div class="projectBox">
+					<div class="box">
+						<a target="_blank" href="https://github.com/pbarchwic/jQuery_Slider_Gallery">
+							<img src="image/gallery.png" alt=" galeria zdjęć wykonana przy pomocy jQuery">
+						</a>
+					</div>
+					<div class="projectText">
+						<h3> Galeria Zdjęć</h3>
+						Wykonana od zera galeria zdjęć, slider do przeglądania obrazów. Użyte technologie: HTML, CSS, jQuery.
+					</div>
+				</div>	
+				<div class="projectBox">
+					<div class="box">
+						<a target="_blank" href="https://github.com/pbarchwic/jQuery_Slider_Gallery">
+							<img src="image/slider.png" alt="prosta gra napisana w css i JavaScript">
+						</a>
+					</div>
+					<div class="projectText">
+						<h3> Slider page</h3>
+						Slider  Użyte technologie: HTML, CSS, jQuery.
+					</div>
+				</div>	
 			</section>
 	</article>
 	<article class="slide" id="contact">
 		<div class="ex"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
 			<h1> Kontakt </h1>
 				<span> Jeśli Cię zainteresowałem, skontakuj się ze mną. </span>
-				<span class="info">
+				<div class="info">
 					<i class="fa fa-phone-square fa-2x fa-fw" aria-hidden="true"></i>
-					<span class="infoText">Telefon: 793 387 661</span>
-				</span>
+					<div class="infoText">Telefon: 793 387 661</div>
+				</div>
 				<span class="info">
 					<i class="fa fa-envelope fa-2x fa-fw" aria-hidden="true" ></i>
 					<span class="infoText">E-mail: barchwicp@gmail.com</span>
@@ -138,8 +178,7 @@ $(document).ready(function(){
 		var showSlide = function(noSlide){	
 	
 		noSlide.animate({left: 100 + "%"}, 500);
-		$(".front").fadeOut(200);
-			
+		$(".front").fadeOut(200);	
 		i++;
 		};
 		
@@ -158,9 +197,9 @@ $(document).ready(function(){
 		var y = buttonArray.indexOf((this));
 		console.log(y);
 });	
-	buttonArray[0].click(function(){	
+buttonArray[0].click(function(){	
 	showMenu($(".menu"));
-	if ( i > 0 )
+	if ( i>0 )
 	{
 	hideSlide($(".slide"));
 	showSlide(pageArray[0]);
