@@ -6,7 +6,6 @@ body
 	width: 100%;
 	font-family: 'Dosis', sans-serif;
 	font-weight: 400;
-
 }
 
 @keyframes animation-left
@@ -98,7 +97,6 @@ nav
 	padding: 15px;
 	width: 80px;
 	font-size: 17px;
-	font-weight: 500;
 	text-align: center;
 	border-radius: 0 5px  5px 0 ;
 	z-index: 100;
@@ -114,10 +112,10 @@ nav
 .ex
 {
 	position: absolute;
-	background: lightgrey;
+	background: rgba(255, 255, 255, 0.0);
 	right: 0%;
 	margin: 20px 0 20px 0;
-	padding: 3px 5px 5px 5px;
+	padding: 0px 5px 5px 5px;
 	width: 20px;
 	text-align: center;
 	border-radius: 5px 0 0 5px;
@@ -163,10 +161,8 @@ h1
 }
 article > span
 {
-	display: flex;
-	flex-flow: row wrap;
 	text-align: left;	
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 }
 /*-------------------------SKILLS-------------------------*/
 .skillsIcon
@@ -174,6 +170,7 @@ article > span
 	font-size: 50px;
 	padding: 0 10px;
 	margin-bottom: 20px;
+	text-align: center;
 }
 .skillsBox
 {
@@ -195,7 +192,6 @@ h3
 {
 	display: block;
 	max-width: 80%;
-	min-width: 200px;
 	text-align: left;
 }
 /*-------------------------PROJECT-------------------------*/
@@ -210,7 +206,8 @@ h3
 .box
 {
 	position: relative;
-	width: 250px;
+	display: inline;
+	min-width: 250px;
 	height: 250px;
 	border: 1px solid grey;
 	margin-right: 20px;
@@ -230,25 +227,18 @@ h3
 }
 .projectText
 {
+	
 	width: 75%;
-	text-align: left;
+	word-wrap: break-word
 }
 .projectText > h3
 {
-	display: block; 
+	display: block;
 }
-.projectText > span
-{
-	width: 75%;
-
-}
-
 
 /* -------------------CONTACT-------------------------*/
 .info
 {
-	display: flex;
-	flex-flow: row wrap;
 	height: 40px;
 	padding: 10px;
 	line-height: 40px;
@@ -268,8 +258,282 @@ h3
 {
 	color: rgb(70,70,70); 
 }
+i
+{
+		line-height: 40px;
+	vertical-align: middle;
+}
+.infoText
+{
+	display: inline-block;	
+}
+
+/* -------------------MOBILE-------------------------*/
+
+
+@media screen and (max-width: 500px)
+{
+/*-------------------------HEADRE-------------------------*/
+header
+{
+	min-width: 250px;
+	max-width: 250px;
+	padding: 5px;
+}
+#name
+{
+	font-size: 25px;
+}
+#name p
+{
+	font-size: 15px;
+}
+.front
+{
+	font-size: 15px;
+	width: 250px;
+}
+figure > img
+{
+	height: 100px;
+}
+/*-------------------------MENU-------------------------*/
+.menu
+{
+	margin: 10px 0 10px 0;
+	padding: 5px;
+	width: 16px;
+	height: 80px;
+	font-size: 16px;
+	line-height: 80px;
+	vertical-align: middle;
+}
+.mobile
+{
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	left: -40px;
+	-ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.ex
+{
+	margin: 10px 0 10px 0;
+	padding: 2px 2px 4px 2px;
+	width: 20px;
+}
+/*-------------------------ALL SLIDERS-------------------------*/
+.slide
+{
+	font-size: 15px;
+	padding: 0 40px 0 40px;
+}
+h1
+{
+	font-size: 21px;
+	padding-bottom: 10px;
+	margin: 15px 0;
+}
+
+/*-------------------------SKILLS-------------------------*/
+.skillsIcon
+{
+	font-size: 30px;
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+.skillsBox
+{
+	margin-bottom: 15px;
+}
+.skillsBox > h3
+{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px 0;
+}
+.skillsText
+{
+	font-size: 15px;
+	text-align: center;
+	max-width: 100%;
+}
+
+/*-------------------------PROJECT-------------------------*/
+.projectBox
+{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.box
+{
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 150px;
+	height: 150px;
+}
+.box > a > img
+{
+	height: 150px;
+}
+.projectText
+{
+	width: 100%;
+}
+.projectText > h3
+{
+	margin: 10px 0;
+	text-align: center;
+}
+/* -------------------CONTACT-------------------------*/
+.info
+{
+	height: 40px;
+	padding: 0px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+}
+#contact a
+{
+
+	width: 100%;
+
+}
+
 .infoText
 {
 
 	display: inline-block;	
+}
+}
+
+@media screen and (max-height: 500px)
+{
+/*-------------------------HEADRE-------------------------*/
+header
+{
+	min-width: 350px;
+	max-width: 350px;
+	padding: 5px;
+}
+#name
+{
+	font-size: 25px;
+}
+#name p
+{
+	font-size: 15px;
+}
+.front
+{
+	font-size: 15px;
+	width: 350px;
+}
+figure > img
+{
+	height: 100px;
+}
+/*-------------------------MENU-------------------------*/
+.menu
+{
+	position: relative;
+	background: rgba(255, 255, 255, 0.8);
+	margin: 10px 0 10px 0;
+	padding: 10px 5px;
+	width: 70px;
+	font-size: 12px;
+}
+.ex
+{
+	margin: 10px 0 10px 0;
+	padding: 0px 2px 4px 2px;
+	width: 20px;
+}
+/*-------------------------ALL SLIDERS-------------------------*/
+.slide
+{
+	font-size: 15px;
+	padding: 0 40px 0 100px;
+	height: 70%;
+}
+h1
+{
+	font-size: 21px;
+	padding-bottom: 10px;
+	margin: 15px 0;
+}
+
+/*-------------------------SKILLS-------------------------*/
+.skillsIcon
+{
+	font-size: 30px;
+	padding: 0 5px;
+	margin-bottom: 10px;
+}
+.skillsBox
+{
+	margin-bottom: 15px;
+}
+.skillsBox > h3
+{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px 0;
+}
+.skillsText
+{
+	font-size: 15px;
+	text-align: center;
+	max-width: 100%;
+}
+
+/*-------------------------PROJECT-------------------------*/
+.projectBox
+{
+	margin-bottom: 10px;
+	text-align: center;
+}
+.box
+{
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 150px;
+	height: 150px;
+}
+.box > a > img
+{
+	height: 150px;
+}
+.projectText
+{
+	width: 100%;
+}
+.projectText > h3
+{
+	margin: 10px 0;
+	text-align: center;
+}
+/* -------------------CONTACT-------------------------*/
+.info
+{
+	height: 40px;
+	padding: 0px;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: left;
+}
+#contact a
+{
+	width: 100%;
+}
+
+.infoText
+{
+	display: inline-block;	
+}
 }
