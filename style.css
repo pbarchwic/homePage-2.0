@@ -147,7 +147,13 @@ nav
 	z-index: 5;	
 	
 }
-::-webkit-scrollbar {
+::-webkit-scrollbar 
+{
+    width: 0px;
+    background: transparent;
+}
+::-moz-scrollbar
+{
     width: 0px;
     background: transparent;
 }
@@ -161,8 +167,9 @@ h1
 }
 article > span
 {
+	display: block;
 	text-align: left;	
-	margin-bottom: 20px;
+	margin-bottom: 15px;
 }
 /*-------------------------SKILLS-------------------------*/
 .skillsIcon
@@ -269,9 +276,7 @@ i
 }
 
 /* -------------------MOBILE-------------------------*/
-
-
-@media screen and (max-width: 500px)
+@media screen and (max-width: 550px)
 {
 /*-------------------------HEADRE-------------------------*/
 header
@@ -347,6 +352,7 @@ h1
 .skillsBox
 {
 	margin-bottom: 15px;
+
 }
 .skillsBox > h3
 {
@@ -359,6 +365,8 @@ h1
 {
 	font-size: 15px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 100%;
 }
 
@@ -411,14 +419,15 @@ h1
 }
 }
 
-@media screen and (max-height: 500px)
+@media screen and (max-height: 450px)
 {
 /*-------------------------HEADRE-------------------------*/
 header
 {
+	margin-top: 1%;
 	min-width: 350px;
 	max-width: 350px;
-	padding: 5px;
+	padding: 3px;
 }
 #name
 {
@@ -430,9 +439,16 @@ header
 }
 .front
 {
+	padding-top: 5px;
 	font-size: 15px;
 	width: 350px;
 }
+figure 
+{
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
 figure > img
 {
 	height: 100px;
@@ -464,7 +480,7 @@ h1
 {
 	font-size: 21px;
 	padding-bottom: 10px;
-	margin: 15px 0;
+	margin: 10px 0;
 }
 
 /*-------------------------SKILLS-------------------------*/
@@ -489,6 +505,8 @@ h1
 {
 	font-size: 15px;
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	max-width: 100%;
 }
 

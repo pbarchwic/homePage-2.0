@@ -11,8 +11,8 @@
 <meta name="viewport" content="initial-scale=1"/>
 
 
-<link rel="stylesheet" media="(max-width: 500px)" href="style.css" />
-<link rel="stylesheet" media="(max-height: 500px)" href="style.css" />
+<link rel="stylesheet" media="(max-width: 550px)" href="style.css" />
+<link rel="stylesheet" media="(max-height: 450px)" href="style.css" />
 <link rel="stylesheet" href="style.css" type="text/css"/>
 <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -36,16 +36,12 @@
 			</div>
 	</header>
 	<nav>
-		<div class="menu" id="first"><span class = "mobile">O mnie</span></div>
-		<div class="menu" id="second"><span class = "mobile">Umiejętności</span></div>
-		<div class="menu" id="third"><span class = "mobile">Projekty</span></div>
-		<div class="menu" id="fourth"><span class = "mobile">Kontakt</span></div>
+		
+		<div class="menu" id="first"><span class = "mobile">Umiejętności</span></div>
+		<div class="menu" id="second"><span class = "mobile">Projekty</span></div>
+		<div class="menu" id="third"><span class = "mobile">Kontakt</span></div>
 	</nav>
-	<article class="slide" id="about">
-		<div class="ex"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
-		<h1> O mnie </h1>
-				<div>Inżynier z krwi i kości :)</div>
-	</article>
+	
 	<article class="slide" id="skills">
 		<div class="ex"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
 		<h1> Umiejętności </h1>
@@ -62,23 +58,23 @@
 		<section>
 				<div class="skillsBox">
 					<h3>HTML</h3>
-					<div class="skillsText">Proin hendrerit, leo quis ultricies feugiat, magna neque iaculis velit, non ultrices sem purus quis orci. Nunc dictum lorem neque, ac convallis lacus dapibus at. In gravida turpis vitae hendrerit congue.</div>
+					<div class="skillsText">Przy tworzeniu swoich projektow staram stosować nowe znaczniki  standardu HTML 5, tak aby strony byly semantyczne, oraz dobrze współgrała z czytnikami oraz wieloma typami urządzeń.</div>
 				</div>
 				<div class="skillsBox">
-				<h3>CSS</h3>
-				<div class="skillsText">Proin hendrerit, leo quis ultricies feugiat, magna neque iaculis velit, non ultrices sem purus quis orci. Nunc dictum lorem neque, ac convallis lacus dapibus at. In gravida turpis vitae hendrerit congue.</div>
+					<h3>CSS</h3>
+					<div class="skillsText">Cały czas poznaje możliwości CSS3. Korzystam z możliwości animacji poszczególnych elementów strony. Główne elementy konstruuje w oparciu o wlaściwości flexbox. Potrafię tworzyć w pełni responsywne strony, które są prawidlowo wyświetlane zarównona komputerach jak i na urządzeniach mobilnych. znam założenia BEM oraz preprosesor SASS </div>
 				</div>
 				<div class="skillsBox">
-				<h3>JavaScript</h3>
-				<div class="skillsText">Proin hendrerit, leo quis ultricies feugiat, magna neque iaculis velit, non ultrices sem purus quis orci. Nunc dictum lorem neque, ac convallis lacus dapibus at. In gravida turpis vitae hendrerit congue.</div>
+					<h3>JavaScript</h3>
+					<div class="skillsText">Napisałem kilka gier i prostych aplikacji, ciągle szlifuje ten język, z dnia na dzień potrafię więcej, rozpocząłem naukę ReactJs i Angular`a.</div>
 				</div>
 				<div class="skillsBox">
-				<h3>Grafika</h3>
-				<div class="skillsText">Od kilkunastu lat posługuję się programem graficznym Adobe Photoshop do edycji oraz retuszu zdjęc, fotomontaży, a także do wykonywania logo oraz grafik. Znam podstawy oprogramowania do grafiki wektorowej Inkscape </div>
+					<h3>Grafika</h3>
+					<div class="skillsText">Od kilkunastu lat posługuję się programem graficznym Adobe Photoshop do edycji oraz retuszu zdjęc, fotomontaży, a także do wykonywania logo oraz grafik. Znam podstawy oprogramowania do grafiki wektorowej Inkscape. </div>
 				</div>
 				<div class="skillsBox">
-				<h3>INNE</h3>
-				<div class="skillsText">Potrafię posługiwać systemem kontroli wersji Git</div>
+					<h3>Grafika</h3>
+					<div class="skillsText">Potrafię posługiwać systemem kontroli wersji Git. </div>
 				</div>
 			
 		</section>
@@ -143,12 +139,23 @@
 						Aplikacja umożliwiająca wysuwanie się kolejnych kart/stron, stworzona od zera na potrzeby ten strony. Użyte technologie: HTML, CSS, jQuery.
 					</div>
 				</div>	
+				<div class="projectBox">
+					<div class="box">
+						<a target="_blank" href="ps.html">
+							<img src="image/zaproszenia.png" alt="dwa przykladowe zaproszenia wykonane w photoshop">
+						</a>
+					</div>
+					<div class="projectText">
+						<h3> Projekty graficzne</h3>
+						Przykładowe dwa projekty, w tym przypadku zaproszenia ślubne, wykonane w programie Adobe Photoshop.
+					</div>
+				</div>	
 			</section>
 	</article>
 	<article class="slide" id="contact">
 		<div class="ex"><i class="fa fa-arrow-left" aria-hidden="true"></i></div>
 			<h1> Kontakt </h1>
-				<span> Jeśli Cię zainteresowałem, skontakuj się ze mną. </span>
+				<span> Jeśli Cię zainteresowałem, skontakuj się ze mną.</span>
 				<div class="info">
 					<i class="fa fa-phone-square fa-2x fa-fw" aria-hidden="true"></i>
 					<div class="infoText">793 387 661</div>
@@ -177,8 +184,8 @@ $(document).ready(function(){
 		
 		var i=0;
 
-		var buttonArray = [$("#first"),$("#second"), $("#third"), $("#fourth")];
-		var pageArray = [$("#about"),$("#skills"), $("#project"), $("#contact")];
+		var buttonArray = [$("#first"),$("#second"), $("#third")];
+		var pageArray = [$("#skills"), $("#project"), $("#contact")];
 		
 		var showSlide = function(noSlide){	
 	
@@ -202,9 +209,11 @@ $(document).ready(function(){
 		var y = buttonArray.indexOf((this));
 		console.log(y);
 });	
-buttonArray[0].click(function(){	
+
+buttonArray[0].click(function(){
+
 	showMenu($(".menu"));
-	if ( i>0 )
+	if ( i>0)
 	{
 	hideSlide($(".slide"));
 	showSlide(pageArray[0]);
@@ -214,59 +223,41 @@ buttonArray[0].click(function(){
 	{
 	showSlide(pageArray[0]);
 	hideMenu($(this));
+	
 	}
 });
 
-
-$("#second").click(function(){
+buttonArray[1].click(function(){
 
 	showMenu($(".menu"));
 	if ( i>0)
 	{
 	hideSlide($(".slide"));
-	showSlide($("#skills"));
-	hideMenu($(this));
-	}
-	else
-	{
-	showSlide($("#skills"));
-	hideMenu($(this));
-	
-	}
-});
-
-$("#third").click(function(){
-
-	showMenu($(".menu"));
-	if ( i>0)
-	{
-	hideSlide($(".slide"));
-	showSlide($("#project"));
+	showSlide(pageArray[1]);
 	hideMenu($(this));
 	
 	}
 	else
 	{
-	showSlide($("#project"));
+	showSlide(pageArray[1]);
 	hideMenu($(this));
 	}
 });
 
-$("#fourth").click(function(){
+buttonArray[2].click(function(){
 	
 	showMenu($(".menu"));
 	if ( i>0)
 	{
 	hideSlide($(".slide"));
-	showSlide($("#contact"));
+	showSlide(pageArray[2]);
 	hideMenu($(this));
 	
 	}
 	else
 	{
-	showSlide($("#contact"));
+	showSlide(pageArray[2]);
 	hideMenu($(this));
-
 	}
 });
 
@@ -278,13 +269,9 @@ $(".ex").click(function(){
 		});
 		i = 0;
 
+});	
+
 });
-
-
-		
-});
-
-
 </script>
 
 </body>
