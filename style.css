@@ -23,7 +23,7 @@ body
 	position: absolute; 
 	height: 100%;
 	width: 100%;
-	background: url(image/bgr.jpg) no-repeat center center fixed; 
+	background: url(image/sbg5.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -138,16 +138,16 @@ nav
 	box-sizing: border-box;
 	background-color: rgba(255, 255, 255, 0.8);
 	text -align: center;
-	height: 75%;
+	max-height: 75%;
 	width: 100%;
 	padding: 0 50px 0 140px;
 	bottom: 0px;
 	margin-left:-100%;
 	overflow-x: hidden;
 	z-index: 5;	
-	
 }
-::-webkit-scrollbar 
+
+/*::-webkit-scrollbar 
 {
     width: 0px;
     background: transparent;
@@ -156,9 +156,10 @@ nav
 {
     width: 0px;
     background: transparent;
-}
+}*/
 h1
 {
+	
 	display: flex;
 	flex-flow: row wrap;
 	text-align: left;
@@ -334,6 +335,7 @@ figure > img
 {
 	font-size: 15px;
 	padding: 0 40px 0 40px;
+	height: 80%;
 }
 h1
 {
